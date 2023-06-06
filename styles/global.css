@@ -1,0 +1,11 @@
+.title{
+    font-size: 120px ;
+    background-color:aqua;
+text-align: center;}
+p{background-color: rgb(255, 255, 255);}
+#parrafo{
+    color:brown;
+    font-size:30px;
+    border: 1px solid red;
+}
+body{background: burlywood;}

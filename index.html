@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/pageLayout.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header container">
+      <div class="logo">
+        <img
+          width="30px"
+          src="./assets/image/logo.png"
+          alt="Logo de prueba"
+        />
+      </div>
+
+      <div class="nav-container">
+        <div class="show-menu">Menu</div>
+        <div class="menu">
+          <div class="space-menu">Pricing</div>
+          <div class="space-menu">Resources Center</div>
+          <div class="space-menu">About</div>
+          <div class="space-menu">Contact</div>
+        </div>
+</div>
+      <div class="login">
+        <button class="button white" onclick="login('Login')">Login</button>
+        <button class="button purple" onclick="login('Sign Up')">Sign Up</button>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <main class="main-container">
+        <h1>Talk to our product analytics expert</h1>
+        <p>
+          Have questions about pricing, plans, or Growthly? Fill out the form and our product analytics expert will be in touch directly.
+        </p>
+        <h3>Our Office</h3>
+        <img
+        width=500px 
+        src="./assets/image/image.png" 
+        alt="Oficina">
+        <p>Have questions about pricing, plans, or Growthly? Fill out the form and our product analytics expert will be in touch directly.</p>
+        <div class="ubicaciones">
+          <div class="primera-direccion"> <h4>United Kingdom</h4>
+         <p> <img width= 12px ; src="./assets/image/ubicacion.png" alt="ubicacion">    30 Eastbourne Terrace</p>
+        <p>    Paddington, London</p>
+      <p>W2 6LA, UK</p>
+      <p><img width= 15px ; src="./assets/image/telefono.png" alt="telefono">  +44 13 5135 1051</p></div>
+          <div class="segunda-direccion"><h4>France</h4>
+          <p><img width= 12px ; src="./assets/image/ubicacion.png" alt="ubicacion"> 266 Place Ernest Granier</p>
+        <p> 34000 Montpellier</p>
+      <p> France</p>
+    <p><img width= 15px ; src="./assets/image/telefono.png" alt="telefono"> +33 5 12 18 21 86</p></div>
+        </div>
+    
+      </main>
+      <div class="aside-container">
+        <div class="names">
+          <aside>
+          <h4>First Name</h4>
+          <input type="text" class="Cuadro1" id="first-name" name="first-name" value="" />
+      <label for="first-name"></label>
+        </aside>
+
+        <aside>
+          <h4>Last Name</h4>
+          <input type="text" class="Cuadro5" id="last-name" name="last-name" value="" />
+      <label for="last-name"></label>
+        </aside> </div>
+
+        <div class="Email"><aside>
+          <h4>Email Address</h4>
+          <input type="email" class="Cuadro2" id="email-address" name="email-address" value="" />
+      <label for="email-address"></label>
+        </aside></div>
+       <div class="Company"> <aside>
+          <h4>Company Name</h4>
+          <input type="text" class="Cuadro2" id="company-name" name="company-name" value="" />
+      <label for="company-name"></label>
+        </aside>
+        <div class="Phone">
+          <aside>
+          <h4>Phone Number</h4>
+          <select class="Cuadro3"  id="pais" name="pais">
+            <option value="">Region</option>
+            <option value="Uruguay">Uruguay +598</option>
+            <option value="Colombia">Colombia +57</option>
+            <option value="Venezuela">Venezuela +58</option>
+            <option value="USA">USA +1</option>
+          </select>
+          <input type="number" class="Cuadro6" id="phone-number" name="phone-number" value="" />
+      <label for="phone-number"></label>
+        </aside></div>
+       <div class="Message"><aside>
+       <h4>Message</h4>
+       <input type="text" class="Cuadro4" id="message" name="message" value="" />
+      <label for="message"></label>
+      </aside></div>
+      
+      <div class="Boton-Send"><aside>
+        <button class="button purple" onclick="Send('Send')">Send</button>
+      </aside></div>
+    </div></div></div>
+
+   
+    <script>
+      function login (nombre) {
+        // alert('Felicitaciones haz dado click al boton: ' + nombre)
+        
+        const valueConfirm = confirm('BOTON DE CONFIRMACIÓN')
+
+        let messageResult = ''
+
+        if (valueConfirm) {
+          messageResult = 'verdadero'
+        } else {
+          messageResult = 'falso'
+        }
+
+        console.log('El resultado fue: ' + messageResult)
+      }
+    </script>
+  </body>
+</html>
